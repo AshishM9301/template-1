@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+
+body {
+ margin: 0;
+  padding: 0;
+  font-family: var(--font-manrope);
+  font-style: normal;
+
+}
+
+.body{
+  margin: 0 16rem 0 20rem;
+  min-height: 100vh;
+}
+
+:root {
+  --gray: #939191;
+  --black: #1e1b1b;
+  --primary: #ff6433;
+  --secondary: #661ce7;
+  --mint: #00d289;
+  --steelGrey: #e2e6e9;
+  --lightGrey: #f2f2f2;
+  --white: #ffffff;
+
+  --font-manrope: "Manrope", sans-serif;
+}
+
+.h1 {
+  font-weight: 800;
+  font-size: 4rem;
+  line-height: 5.25rem;
+
+  letter-spacing: -0.03em;
+}
+
+.h2 {
+  font-weight: 800;
+  font-size: 3.625rem;
+  line-height: 4.75rem;
+
+  letter-spacing: -0.03em;
+}
+
+.h3 {
+  font-weight: 800;
+  font-size: 3rem;
+  line-height: 140%;
+
+  letter-spacing: -0.03em;
+}
+.h4 {
+  font-weight: 800;
+  font-size: 2.5rem;
+  line-height: 140%;
+
+  letter-spacing: -0.03em;
+}
+.h5 {
+  font-weight: 800;
+  font-size: 2rem;
+  line-height: 3rem;
+
+  letter-spacing: -0.03em;
+}
+
+.h6 {
+  font-weight: 800;
+  font-size: 1.25rem;
+  line-height: 150%;
+
+  letter-spacing: -0.03em;
+}
+
+.button-primary {
+  background: var(--primary);
+  border-radius: 12px;
+  padding: 16px 40px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  font-style: normal;
+  font-family: var(--font-manrope);
+  color: var(--white);
+
+  cursor: pointer;
+}
+
+.button-secondary {
+  background: var(--black);
+  border-radius: 12px;
+  padding: 16px 40px;
+  font-size: 1.125rem;
+  font-weight: 600;
+  font-style: normal;
+  font-family: var(--font-manrope);
+  color: var(--white);
+}

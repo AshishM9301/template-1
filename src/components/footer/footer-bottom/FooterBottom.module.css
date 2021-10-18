@@ -1,0 +1,22 @@
+.container {
+  background-color: var(--black);
+
+  padding: 0 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.middle{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.right {
+  color: #939191;
+
+  font-size: 1rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  font-style: normal;
+}

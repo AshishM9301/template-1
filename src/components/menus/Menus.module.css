@@ -1,0 +1,24 @@
+.nav_main {
+  display: flex;
+}
+
+.nav_styles {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.75rem;
+
+  margin-right: 2.5rem;
+
+  color: var(--black);
+}
+.nav_styles_white{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1rem;
+    line-height: 1.75rem;
+  
+    margin-right: 2.5rem;
+  
+    color: var(--white);
+}

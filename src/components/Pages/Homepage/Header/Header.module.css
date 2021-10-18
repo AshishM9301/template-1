@@ -1,0 +1,71 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.right {
+  position: relative;
+}
+
+.bubble_1 {
+  position: absolute;
+  top: 81px;
+  left: -42px;
+}
+
+.bubble_2 {
+  position: absolute;
+  bottom: 70px;
+  right: -42px;
+}
+
+/******* Header Left CSS *******/
+
+.left_container {
+  margin-right: 4rem;
+}
+
+.left_title {
+  margin-top: 5.125rem;
+}
+
+.left_button {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+
+  margin-top: 2rem;
+}
+
+.left_details {
+  margin-top: 3rem;
+
+  display: flex;
+  align-items: center;
+}
+
+.left_clock_icon {
+  margin-right: 13px;
+}
+
+.left_opening_title {
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  /* identical to box height, or 150% */
+
+  /* Grey */
+
+  color: var(--gray);
+}
+
+.left_opening_time {
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 175%;
+  /* identical to box height, or 31px */
+
+  /* Black */
+
+  color: var(--black);
+}

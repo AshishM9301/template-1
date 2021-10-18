@@ -1,0 +1,74 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 1.125rem;
+}
+
+.left {
+
+}
+
+.right {
+  
+  display: flex;
+  align-items: center;
+}
+
+.nav_main {
+  display: flex;
+}
+
+.nav_styles {
+  
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  line-height: 1.75rem;
+
+  margin-right: 2.5rem;
+
+  color: var(--black);
+}
+
+
+.contact{
+    margin-left: 14px;
+    display: flex;
+
+    align-items: center;
+}
+
+.contact_details{
+    margin-left: 14px;
+}
+
+.contact_details div:first-child{
+font-style: normal;
+font-weight: 500;
+font-size: 1rem;
+line-height: 1.5rem;
+/* identical to box height, or 150% */
+
+
+/* Black */
+
+color: var(--black);
+
+opacity: 0.7;
+}
+
+.contact_details div{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 1.125rem;
+    line-height: 175%;
+    /* identical to box height, or 150% */
+    
+    
+    /* Black */
+    
+    color: var(--black);
+    
+   
+    }
