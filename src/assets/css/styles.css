@@ -1,16 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
 
 body {
- margin: 0;
+  margin: 0;
   padding: 0;
   font-family: var(--font-manrope);
   font-style: normal;
-
+  min-height: 100vh;
 }
 
-.body{
+.body {
   margin: 0 16rem 0 20rem;
-  min-height: 100vh;
 }
 
 :root {
@@ -19,8 +18,8 @@ body {
   --primary: #ff6433;
   --secondary: #661ce7;
   --mint: #00d289;
-  --steelGrey: #e2e6e9;
-  --lightGrey: #f2f2f2;
+  --steelGray: #e2e6e9;
+  --lightGray: #f2f2f2;
   --white: #ffffff;
 
   --font-manrope: "Manrope", sans-serif;
@@ -31,6 +30,8 @@ body {
   font-size: 4rem;
   line-height: 5.25rem;
 
+  color: var(--black);
+
   letter-spacing: -0.03em;
 }
 
@@ -38,6 +39,8 @@ body {
   font-weight: 800;
   font-size: 3.625rem;
   line-height: 4.75rem;
+
+  color: var(--black);
 
   letter-spacing: -0.03em;
 }
@@ -47,12 +50,16 @@ body {
   font-size: 3rem;
   line-height: 140%;
 
+  color: var(--black);
+
   letter-spacing: -0.03em;
 }
 .h4 {
   font-weight: 800;
   font-size: 2.5rem;
   line-height: 140%;
+
+  color: var(--black);
 
   letter-spacing: -0.03em;
 }
@@ -61,6 +68,8 @@ body {
   font-size: 2rem;
   line-height: 3rem;
 
+  color: var(--black);
+
   letter-spacing: -0.03em;
 }
 
@@ -68,6 +77,8 @@ body {
   font-weight: 800;
   font-size: 1.25rem;
   line-height: 150%;
+
+  color: var(--black);
 
   letter-spacing: -0.03em;
 }

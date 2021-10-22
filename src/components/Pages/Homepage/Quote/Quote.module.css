@@ -1,0 +1,112 @@
+.background {
+  background: var(--steelGray);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+
+  min-height: 10rem;
+
+  padding: 8rem 0;
+}
+
+/******** Left ***********/
+
+.left {
+  width: 36.5rem;
+}
+
+.left_services_details {
+  margin-top: 3rem;
+  width: 24rem;
+}
+
+.left_service {
+  margin-top: 2rem;
+}
+
+.left_service_title {
+  display: flex;
+  align-items: center;
+}
+
+.left_service_title_name {
+  margin-left: 1rem;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  font-weight: 600;
+
+  color: var(--black);
+}
+
+.left_service_description {
+  color: var(--black);
+  opacity: 0.6;
+
+  font-size: 1rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+
+  margin-left: 4rem;
+}
+
+.left_know_button {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  margin-top: 2rem;
+  margin-left: 4rem;
+
+  width: 17rem;
+}
+
+/******** Right **********/
+
+.right {
+  width: 39rem;
+}
+
+.right_title {
+  margin-bottom: 2rem;
+}
+
+.user_quote {
+  margin-bottom: 1.75rem;
+}
+
+.container_input_for_user {
+  max-width: 100%;
+  background: var(--white);
+
+  padding: 0 2.5rem;
+  height: 4.5rem;
+  display: flex;
+
+  margin-bottom: 4px;
+}
+
+.input_for_user {
+  border: none;
+  border-radius: 2px;
+
+  outline: none;
+  min-width: 80%;
+
+  font-size: 1rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+  color: rgba(30, 27, 27, 0.9);
+}
+
+input.input_for_user::placeholder {
+  color: rgba(30, 27, 27, 0.5);
+  font-size: 1rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+
+.button_container {
+  display: flex;
+}

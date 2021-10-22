@@ -8,7 +8,7 @@ import Menus from "../menus/Menus";
 
 function Navbar() {
   return (
-    <div className={styles.container}>
+    <div className={`body ${styles.container}`}>
       <div className={styles.left}>
         <img src={logo} alt="logo" />
       </div>
