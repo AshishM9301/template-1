@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+
+  position: relative;
+
+  height: 31.375rem;
+}
+
+.CarRepair {
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  z-index: 2;
+}
+
+.Engine {
+  position: absolute;
+  right: 0;
+
+  top: 0;
+}
+
+.text {
+  background-color: var(--primary);
+
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+  padding-left: 5rem;
+  padding-right: 5rem;
+
+  z-index: 10;
+
+  width: 37rem;
+}
+
+.text .h3 {
+  color: var(--white);
+}
+
+.contact_button {
+  display: flex;
+
+  margin-top: 3rem;
+}

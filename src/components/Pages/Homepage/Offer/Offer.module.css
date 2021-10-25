@@ -1,0 +1,114 @@
+.background {
+  background: var(--lightGray);
+}
+
+.container {
+  min-height: 10rem;
+
+  width: 80.5rem;
+
+  padding-top: 8rem;
+  padding-bottom: 8rem;
+
+  margin: auto;
+}
+
+.titles {
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  /* identical to box height, or 150% */
+
+  text-align: center;
+  letter-spacing: -0.03em;
+
+  /* Black */
+
+  color: var(--black);
+}
+
+.titles .big_title {
+  margin-top: 8px;
+
+  width: 53.625rem;
+  margin: auto;
+
+  font-weight: 800;
+  font-size: 3.625rem;
+  line-height: 4.75rem;
+}
+
+.offers {
+  margin-top: 4rem;
+
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* ------ Card Style ----- */
+
+.card {
+  width: 19.75rem;
+  height: 14.5rem;
+
+  margin-bottom: 8px;
+  margin-left: 4 px;
+  margin-right: 2 px;
+
+  background-color: var(--white);
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  /* identical to box height, or 150% */
+
+  text-align: center;
+  letter-spacing: -0.03em;
+
+  /* Black */
+
+  color: var(--black);
+}
+
+.card:hover {
+  background-color: var(--primary);
+  color: var(--white);
+
+  transition: all 0.4s ease;
+}
+
+.offerIcon {
+  fill: var(--black);
+}
+
+.card:hover .offerIcon {
+  fill: var(--white);
+}
+
+.learn_button {
+  margin-top: 2rem;
+
+  display: flex;
+  align-items: center;
+
+  justify-content: flex-end;
+
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 175%;
+
+  color: var(--black);
+
+  cursor: pointer;
+}
+
+.learn_button .arrow {
+  display: flex;
+
+  margin-left: 1rem;
+}
