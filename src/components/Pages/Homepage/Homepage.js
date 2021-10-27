@@ -1,4 +1,5 @@
 import React from "react";
+import Brands from "./Brands/Brands";
 import CTA from "./CTA/CTA";
 import Experience from "./Experience/Experience";
 import Header from "./Header/Header";
@@ -6,6 +7,7 @@ import styles from "./Homepage.module.css";
 import Offer from "./Offer/Offer";
 import ProcessSelection from "./ProcessSelection/Process_Selection";
 import Quote from "./Quote/Quote";
+import Testimonials from "./Testimonials/Testimonials";
 
 function Homepage() {
   return (
@@ -27,6 +29,12 @@ function Homepage() {
       </div>
       <div>
         <Experience />
+      </div>
+      <div>
+        <Brands />
+      </div>
+      <div>
+        <Testimonials />
       </div>
     </div>
   );
