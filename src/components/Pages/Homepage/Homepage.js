@@ -2,6 +2,7 @@ import React from "react";
 import Brands from "./Brands/Brands";
 import CTA from "./CTA/CTA";
 import Experience from "./Experience/Experience";
+import FAQ from "./FAQ/FAQ";
 import Header from "./Header/Header";
 import styles from "./Homepage.module.css";
 import Offer from "./Offer/Offer";
@@ -35,6 +36,9 @@ function Homepage() {
       </div>
       <div>
         <Testimonials />
+      </div>
+      <div>
+        <FAQ />
       </div>
     </div>
   );

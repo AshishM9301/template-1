@@ -1,6 +1,6 @@
 import React from "react";
 
-function Circle({ text1, text2, color, type, imgsrc, size }) {
+function Circle({ text1, text2, color, type, imgsrc, size, component }) {
   const styles = {
     bubble: {
       width: size ? size : "4.375rem",
@@ -11,6 +11,7 @@ function Circle({ text1, text2, color, type, imgsrc, size }) {
       justifyContent: "center",
       alignItems: "center",
       position: "relative",
+      transition: "all .4ms ease",
     },
     bubble_1_text_1: {
       fontSize: "1.5rem",
@@ -53,6 +54,8 @@ function Circle({ text1, text2, color, type, imgsrc, size }) {
         <img src={imgsrc} alt="Component" style={styles.eclipse} />
       </div>
     );
+
+  if (type === 4) return <div style={styles.bubble}>{component}</div>;
 }
 
 export default Circle;

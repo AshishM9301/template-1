@@ -93,6 +93,11 @@
 
 /* ---------- Card No Showing ------ */
 
+.sliderLines_Container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .cards_records {
   margin-top: 3rem;
 
@@ -104,6 +109,8 @@
   width: 2rem;
   height: 0;
 
+  margin: 0 6px;
+
   border: 4px solid var(--primary);
 }
 
@@ -111,5 +118,19 @@
   width: 2rem;
   height: 0;
 
+  margin: 0 6px;
+
   border: 4px solid var(--gray);
+}
+
+.slider {
+  display: flex;
+  width: 8.5rem;
+  height: 3.875rem;
+
+  margin-top: 1rem;
+}
+
+.left_slider {
+  margin-right: 1.5rem;
 }

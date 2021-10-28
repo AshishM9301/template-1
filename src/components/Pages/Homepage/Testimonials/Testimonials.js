@@ -2,10 +2,16 @@ import React, { useEffect, useState } from "react";
 
 import styles from "./Testimonials.module.css";
 import TestimonialsCard from "./Testimonials_Card";
+import Circle from "../../../bubbles/Circle/circle";
+
+import LeftArrowIcon from "../../../Icons/LeftArrowIcon";
+import RightArrowIcon from "../../../Icons/RightArrowIcon";
 
 function Testimonials() {
   const [CardsArr, setCardsArr] = useState([[]]);
   const [ShowingNo] = useState(1);
+  const [LeftHover, setLeftHover] = useState(false);
+  const [RightHover, setRightHover] = useState(false);
 
   const cards = [
     {
@@ -71,7 +77,6 @@ function Testimonials() {
   });
 
   const data = () => {
-    console.log(cards.length);
     let a = [];
     let b = [];
 
@@ -87,8 +92,6 @@ function Testimonials() {
     }
 
     setCardsArr(b);
-
-    console.log(b);
   };
 
   const showCard = (no) => {
@@ -101,6 +104,20 @@ function Testimonials() {
     });
   };
 
+  const cardsChangeUi = () => {
+    return CardsArr.map((cards, index) => {
+      return (
+        <div
+          className={
+            ShowingNo - 1 === index
+              ? styles.cards_record_on
+              : styles.cards_record_off
+          }
+        ></div>
+      );
+    });
+  };
+
   return (
     <div className={styles.background}>
       <div className={styles.container}>
@@ -108,14 +125,45 @@ function Testimonials() {
           Our customers say the nicest things about our service
         </div>
         <div className={styles.testimonials}>{showCard(ShowingNo)}</div>
-        <div className={styles.cards_records}>
-          {CardsArr.map((cards) => {
-            if (ShowingNo - 1 === CardsArr.indexOf(CardsArr[ShowingNo - 1])) {
-              return <div className={styles.cards_record_on}></div>;
-            } else {
-              return <div className={styles.cards_record_off}></div>;
-            }
-          })}
+        <div className={styles.sliderLines_Container}>
+          <div style={{ width: "8.5rem" }}></div>
+          <div className={styles.cards_records}>{cardsChangeUi()}</div>
+          <div className={styles.slider}>
+            <div
+              className={styles.left_slider}
+              onMouseEnter={() => setLeftHover(true)}
+              onMouseLeave={() => setLeftHover(false)}
+            >
+              <Circle
+                type={4}
+                size={LeftHover ? "3.875rem" : "3rem"}
+                component={
+                  <LeftArrowIcon
+                    hover={LeftHover}
+                    fill={LeftHover ? "var(--white)" : "var(--black)"}
+                  />
+                }
+                color={LeftHover ? "var(--black)" : "var(--white)"}
+              />
+            </div>
+            <div
+              className={styles.right_slider}
+              onMouseEnter={() => setRightHover(true)}
+              onMouseLeave={() => setRightHover(false)}
+            >
+              <Circle
+                type={4}
+                size={RightHover ? "3.875rem" : "3rem"}
+                component={
+                  <RightArrowIcon
+                    hover={RightHover}
+                    fill={RightHover ? "var(--white)" : "var(--black)"}
+                  />
+                }
+                color={RightHover ? "var(--black)" : "var(--white)"}
+              />
+            </div>
+          </div>
         </div>
       </div>
     </div>

@@ -1,0 +1,7 @@
+.background {
+  background: var(--steelGray);
+}
+
+.container {
+  padding: 8rem 0;
+}
