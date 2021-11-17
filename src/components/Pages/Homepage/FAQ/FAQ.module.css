@@ -5,3 +5,66 @@
 .container {
   padding: 8rem 0;
 }
+
+.title {
+  text-align: center;
+
+  margin-bottom: 6rem;
+}
+
+/**** Card ****/
+
+.cards_container {
+  width: 56rem;
+
+  margin: 12px auto 0;
+
+  background: var(--white);
+
+  padding: 2.5rem 2.536rem;
+}
+
+.cards_title_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card_show {
+  background: var(--primary);
+  color: var(--white);
+
+  font-size: 3rem;
+  font-weight: 400;
+
+  cursor: pointer;
+
+  width: 3.5rem;
+  height: 3.25rem;
+  display: flex;
+  justify-content: center;
+}
+
+.card_show div {
+  margin-top: -15%;
+}
+
+.cards_title {
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+
+  color: var(--black);
+}
+
+.cards_desc {
+  margin-top: 12px;
+
+  width: 44rem;
+
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 175%;
+
+  color: var(--gray);
+}

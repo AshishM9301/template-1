@@ -1,4 +1,5 @@
 import React from "react";
+import FooterTop from "../../footer/footer-top/Footer-top";
 import Brands from "./Brands/Brands";
 import CTA from "./CTA/CTA";
 import Experience from "./Experience/Experience";

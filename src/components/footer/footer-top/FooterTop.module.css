@@ -1,0 +1,48 @@
+.background {
+  background: var(--black);
+  opacity: 0.98;
+
+  padding: 8rem;
+
+  min-height: 30rem;
+}
+
+.container {
+  display: flex;
+}
+
+.left {
+  width: 28.5rem;
+  margin-right: 11.3rem;
+}
+
+.left .title {
+  color: var(--white);
+}
+
+.right {
+  color: var(--white);
+}
+
+.block {
+  margin-bottom: 2rem;
+}
+
+.right .block_title {
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 175%;
+
+  opacity: 0.6;
+
+  margin-bottom: 8px;
+}
+
+.right .block_no {
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 2.25rem;
+  /* identical to box height, or 150% */
+
+  letter-spacing: -0.03em;
+}
